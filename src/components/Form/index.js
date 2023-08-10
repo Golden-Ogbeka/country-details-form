@@ -24,8 +24,15 @@ const Form = ({ setResult }) => {
 
   return (
     <form className='input-container' onSubmit={getCountryDetails}>
-      <input type='text' value={country} onChange={(e) => setCountry(e.target.value)} />
-      <button type='submit'>Get Details</button>
+      <input
+        className='country-input'
+        type='text'
+        value={country}
+        onChange={(e) => setCountry(e.target.value)}
+      />
+      <button type='submit' className='country-button'>
+        Get Details
+      </button>
     </form>
   );
 };
